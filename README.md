@@ -1,8 +1,10 @@
-2. 로또 번호 추천 사이트 만들기
+##### 2. 로또 번호 추천 사이트 만들기
 
-get '/' {} : '로또 추천'라는 버튼을 만들고 -> '/lotto'
-get '/lotto' {} : 로또 번호를 추천하는데, 매번 추천된 번호를 lotto.txt 파일에 저장을 한다.
-app.rb 만들기
+- get '/' {} : '로또 추천'라는 버튼을 만들고 -> '/lotto'
+- get '/lotto' {} : 로또 번호를 추천하는데, 매번 추천된 번호를 lotto.txt 파일에 저장을 한다.
+- app.rb 만들기
+
+```
 # 2일차 복습
 # 2. 로또 번호 추천 사이트를 만든다.
 #  - get '/' {} : '로또 추천'라는 버튼을 만들고 -> '/lotto'
@@ -24,7 +26,11 @@ get '/lotto' do
   end
   erb :lotto
 end
-index.erb 만들기
+```
+
+- index.erb 만들기
+
+```
 <html>
   <head>
     <meta charset="utf-8">
@@ -38,7 +44,11 @@ index.erb 만들기
     </form>
   </body>
 </html>
-lotto.erb 만들기
+```
+
+- lotto.erb 만들기
+
+```
 <html>
   <head>
     <meta charset="utf-8">
@@ -49,3 +59,4 @@ lotto.erb 만들기
     <p><%= @lot %></p>
   </body>
 </html>
+```
